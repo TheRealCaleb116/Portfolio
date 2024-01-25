@@ -81,7 +81,11 @@
                 </div>
                 <div class="col-sm-6">
                     <p>
-                        This project contains two simulations, one is a real-time 3D Cloth Simulation that uses a Mass-Spring model to simulate realistic cloth as it drapes, collides with an object, and is affected by air drag and wind forces. The other simulation is a 2D Shallow Water simulation that is derived from the Navier-Stokes equations. It uses the results of the shallow water equations to drive a procedurally generated mesh that was then textured to look like water. The project was implemented from scratch by me for my Animation and Planning in Games class. A link to the writeup page I submitted for the assignment is linked below.
+                        This project contains two simulations, one is a real-time 3D Cloth Simulation that uses a Mass-Spring model 
+                        to simulate realistic cloth as it drapes, collides with an object, and is affected by air drag and wind forces. 
+                        The other simulation is a 2D Shallow Water simulation that is derived from the Navier-Stokes equations. It uses the results 
+                        of the shallow water equations to drive a procedurally generated mesh that was then textured to look like water. The project was 
+                        implemented from scratch by me for my Animation and Planning in Games class. A link to the write-up page I submitted for the assignment is linked below.
                     </p>    
                 </div>
 
@@ -110,7 +114,7 @@
                                     </video>    
                                     <div class="carousel-caption d-none d-md-block">
                                     <h5>3D Mass-Spring Cloth Simulation</h5>
-                                    <p>The cloth is simulated with external collision, air restance, and wind forces.</p>
+                                    <p>The cloth is simulated with external collision, air resistance, and wind forces.</p>
                                     </div>
                                 </div>
                             
@@ -119,7 +123,7 @@
                                     alt="Shallow Water Simulation Gif" style="object-position: bottom;"/>
                                     <div class="carousel-caption d-none d-md-block">
                                     <h5>Shallow Water Simulation</h5>
-                                    <p>A 2D Shallow water simulation driving a mesh that is generated in and rendered in realtime.</p>
+                                    <p>A 2D Shallow water simulation driving a mesh that is generated in and rendered in real time.</p>
                                     </div>
                                 </div>
                         
@@ -204,7 +208,10 @@
                             <div class="card-body">
                                 <h5 class="card-title snippet">Mass-Spring Based Cloth</h5>
                                 <p class="ps-2 card-text">
-                                    The Cloth simulation is based on a Mass-Spring formulation that models the cloth as a grid of vertices connected by springs that are tuned to give a slightly elastic cloth-like behavior. My cloth uses spring links in the cardinal directions between vertices. This simulation controls the movement of a procedural mesh that is updated as the simulation updates.
+                                    The Cloth simulation is based on a Mass-Spring formulation that models the cloth as a grid of vertices 
+                                    connected by springs that are tuned to give a slightly elastic cloth-like behavior. My cloth uses spring links 
+                                    in the cardinal directions between vertices. This simulation controls the movement of a procedural mesh that is 
+                                    updated as the simulation updates.
                                 </p>
                             </div>
                         </div>
@@ -222,7 +229,9 @@
                             <div class="card-body">
                                 <h5 class="card-title snippet">Collision and Air Drag</h5>
                                 <p class="ps-2 card-text">
-                                    The cloth also models air drag on the surface of the cloth, changing the velocity of each part of the cloth, and collision with external objects like the ball in the scene depicted. The collision is implemented with a simple sphere intersection test against each vertex in the cloth mesh.
+                                    The cloth also models air drag on the surface of the cloth, changing the velocity of each part of the cloth, 
+                                    and collision with external objects like the ball in the scene depicted. The collision is implemented with a 
+                                    simple sphere intersection test against each vertex in the cloth mesh.
                                 </p>
                             </div>
                         </div>
@@ -240,7 +249,9 @@
                             <div class="card-body">
                                 <h5 class="card-title snippet">Wind Forces</h5>
                                 <p class="ps-2 card-text">
-                                    A convenient consequence of modeling air drag is that it is simple to add an additional force to model wind moving the cloth. Using Unity's particle system I also created particles to visualize the direction and intensity of the wind.
+                                    A convenient consequence of modeling air drag is that it is simple to add an additional force to
+                                    model wind moving the cloth. Using Unity's particle system I also created particles to visualize 
+                                    the direction and intensity of the wind.
                                 </p>
                             </div>
                         </div>
@@ -259,7 +270,10 @@
                             <div class="card-body">
                                 <h5 class="card-title snippet">Shallow Water Simulation</h5>
                                 <p class="ps-2 card-text">
-                                    I also created a 2D shallow water simulation and integrated it into a 2D scene. This simulation uses a set of equations derived from the Navier-Stokes equations to simulate the heights that define the surface of a body of shallow water. I used these results to generate a procedural mesh that I then textured to look like water.
+                                    I also created a 2D shallow water simulation and integrated it into a 2D scene. This simulation uses 
+                                    a set of equations derived from the Navier-Stokes equations to simulate the heights that define the 
+                                    the surface of a body of shallow water. I used these results to generate a procedural mesh that I then 
+                                    textured to look like water.
                                 </p>
                             </div>
                         </div>
