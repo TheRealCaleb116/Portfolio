@@ -83,7 +83,13 @@
                 </div>
                 <div class="col-sm-6">
                     <p>
-                        Group Pathfinding With Flow Fields is a project I wrote as the final project for my Animation and Planning In Games class. My goal was to implement a Flow Field based pathfinding solution for large numbers of individual agents in the game engine Unity, similar to systems found in RTS games. The Flow Field is built on a grid representation and the integration field is calculated with the Eikonal equation, providing a smoother vector field when compared to methods based on a form of Dijkstra’s algorithm. The result is a relatively efficient pathfinding solution that's computation time scales with the map size not the number of pathing agents.                    </p>
+                        Group Pathfinding With Flow Fields is a project I wrote as the final project for my Animation and Planning In Games class. 
+                        My goal was to implement a Flow Field based pathfinding solution for large numbers of individual agents in the game engine 
+                        Unity, similar to systems found in RTS games. The Flow Field is built on a grid representation and the integration field is 
+                        calculated with the Eikonal equation, providing a smoother vector field when compared to methods based on a form of Dijkstra’s 
+                        algorithm. The result is a relatively efficient pathfinding solution that's computation time scales with the map size not the 
+                        number of pathing agents.                    
+                    </p>
                 </div>
 
             </div>
@@ -165,7 +171,9 @@
                             <div class="card-body">
                                 <h5 class="card-title snippet">Many Unit Single Goal Pathfinding</h5>
                                 <p class="ps-2 card-text">
-                                    Because the flow field is a map calculated once for each destination, the computation time scales with the size of the map and not with the number of agents requesting a path. This makes the algorithm well suited for many agents pathing from different locations to the same point.
+                                    Because the flow field is a map calculated once for each destination, the computation time scales 
+                                    with the size of the map and not with the number of agents requesting a path. This makes the algorithm 
+                                    well suited for many agents pathing from different locations to the same point.
                                 </p>
                             </div>
                         </div>
@@ -183,7 +191,8 @@
                             <div class="card-body">
                                 <h5 class="card-title snippet">Flowing Movement</h5>
                                 <p class="ps-2 card-text">
-                                    Because the Flow Field pathfinding has a unit reference the field and follow the graident of that field, paths often look more organic and large numbers of agents start to move more akin to fluid around obstacles.
+                                    Because the Flow Field pathfinding has a unit reference the field and follow the gradient of that field, 
+                                    paths often look more organic and large numbers of agents start to move more akin to fluid around obstacles.
                                 </p>
                             </div>
                         </div>
@@ -201,7 +210,9 @@
                             <div class="card-body">
                                 <h5 class="card-title snippet">Layers of Maps</h5>
                                 <p class="ps-2 card-text">
-                                    The final vector field that agents reference when they want to move is calulated in from a series of field. We start with an obstruction layer, then create an integration layer by integrating values out from the goal position. Taking the gradient of that integration field at each cell in the grid provides the vector field.
+                                    The final vector field that agents reference when they want to move is calculated from a series of fields. 
+                                    We start with an obstruction layer and then create an integration layer by integrating values out from the goal position. 
+                                    Taking the gradient of that integration field at each cell in the grid provides the vector field.
                                 </p>
                             </div>
                         </div>
@@ -220,7 +231,14 @@
                             <div class="card-body">
                                 <h5 class="card-title snippet">Eikonal vs Dijkstra’s</h5>
                                 <p class="ps-2 card-text">
-                                    The integration field can be calculated in many different ways. One of the computationally fastest ways to do this is with a version of Dijkstra’s algorithm to step through each node going out from the goal position. The issue with this method is that its discrete, causing noticeable square or diamond shape artifacting. This caused agents to take odd paths favoring the cardinal axis. After attempting this method I switched to calculating the integration field using the Eikonal equation, which is a partial differential equation used to model wave propagation amongst other things. While more computationally expensive, the field provided is much smoother and more realistic, similar to if a wave in water originates from the goal position and radiated outwards. There are several ways to perform these calculations, for instance, the Fast Marching Method. For my implementation, I used the Fast Iterative Method.
+                                    The integration field can be calculated in many different ways. One of the computationally fastest ways to do 
+                                    this is with a version of Dijkstra’s algorithm to step through each node going out from the goal position. The 
+                                    issue with this method is that it is discrete, causing noticeable square or diamond shape artifacting. This caused 
+                                    agents to take odd paths favoring the cardinal axis. After attempting this method I switched to calculating the 
+                                    integration field using the Eikonal equation, which is a partial differential equation used to model wave propagation 
+                                    amongst other things. While more computationally expensive, the field provided is much smoother and more realistic, 
+                                    similar to if a wave in water originates from the goal position and radiates outwards. There are several ways to 
+                                    perform these calculations, for instance, the Fast Marching Method. For my implementation, I used the Fast Iterative Method.
                                 </p>
                             </div>
                         </div>
