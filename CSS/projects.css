@@ -1,0 +1,61 @@
+/* Projects.html styles */
+
+.carousel-item{
+    max-height: 50vh;
+    min-height: 300px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    max-width: 150px;
+}
+
+.carousel-caption{
+    text-align: start;
+    bottom: 0px;
+    height: 100%;
+    right: 10%;
+    left: 10%;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    min-height: inherit;
+}
+
+
+
+.projectCard{
+    min-height: 300px;
+}
+
+
+.card-body{
+  color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.cBackgroundImage{
+    position: absolute;
+    z-index: 0;
+}
+
+.col{
+    background: transparent;
+}
+
+
+.carousel-item img, .carousel-item video{
+    max-height: 420px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item{
+    max-height: 420px;
+}

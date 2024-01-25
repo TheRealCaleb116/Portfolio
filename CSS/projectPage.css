@@ -1,0 +1,62 @@
+/* styles for the project pages */
+
+.projectHeaderImg{
+    min-height: 300px;
+    height: 40vh;
+    position: relative;
+}
+
+.projectHeaderImg video, .projectHeaderImg img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.headerContent{
+    position: absolute;
+    top: 0%;
+}
+
+.mask-custom {
+    backdrop-filter: blur(0px);
+    background-color: rgba(0,0,0,0.3);
+  }
+
+.featureContainer div{
+    border-radius: 0px;
+}
+
+
+.featureContainer > div:nth-child(even){
+    background-color: rgb(32, 47, 52);
+    color: white;
+}
+
+.featureContainer > div:nth-child(odd){
+    background-color: white;
+    color: black;
+}
+
+.fHeader{
+    background-color: rgb(52, 45, 32);
+    border-bottom: black solid 4px;
+}
+
+.fHeader h1{
+    margin: 0px;
+    color: white;
+}
+
+.fcIMG{
+    max-height: 35vh;
+}
+
+.carousel-item img, .carousel-item video{
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#projectCarousel{
+    max-height: 500px;
+}

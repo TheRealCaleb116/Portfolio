@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Caleb W. - 2D CCDIK And BOIDs</title>
+    <link href="../../CSS/clearCSS.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+    <!--Custom Styles-->
+    <link href="../../CSS/global.css" rel="stylesheet" />
+    <link href="../../CSS/projectPage.css" rel="stylesheet" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Snippet&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="d-flex flex-column">
+    <header>
+        <div class="contentBody d-flex flex-column">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <!-- Container wrapper -->
+                <div class="container-fluid" id="navContainer">
+                    <!-- Toggle button -->
+                    <button class="navbar-toggler ms-auto" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <a class="navbar-brand mt-2 mt-lg-0" href="../../index.html" id="navbarLogo">
+                            <img src="../../Img/Title Text.svg" style="height: 64px;">
+                        </a>
+
+                        <!--Right align stuff-->
+                        <div class="ms-auto" id="navbarItems">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../projects.html">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../contact.html">Contact</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="projectHeaderImg bg-dark text-light">
+            <video autoplay loop muted class="">
+                <source src="../../Img/projectAssets/Videos/BOIDScloseUp.webm" type="video/webm" />
+            </video>    
+            <!-- Image Mask -->
+            <div class="mask mask-custom"></div>
+
+            <div class="headerContent row d-flex align-items-center w-100 h-100 px-5">
+                <div class="col-sm-6">
+                    <h2>2D Inverse Kinimatics and BOIDS with Obstacle Avoidance</h2>
+                    <h6 class="ps-3 dim"><em>C#, Inverse Kinimatics, BOIDS, Unity 3D, Realtime Simulation</em></h6>
+                </div>
+                <div class="col-sm-6">
+                    <p>
+                        This project contains two simulations, the first is a 2D Inverse Kinematics simulation that was implemented using a Cyclic Coordinate Descent(CCD) method on a multi-arm armature reaching for two different target points. In addition to the base IK system, I implemented configurable angle limits for the armature's joints and collision with external objects. The second simulation uses the BOIDs flocking algorithm with an additional goal and collision avoidance force to direct the movement of groups of AI agents.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="container" style="max-width: unset;">
+            <div class="row px-5 d-flex align-items-center">
+                <div class="col-md-8">
+                    <div class="bg-image p-3">
+                        <!-- Carousel -->
+                        <div id="projectCarousel" class="carousel slide carousel-fade cIMG" data-mdb-ride="carousel" data-mdb-carousel-init>
+                            <!-- Indicators -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-mdb-target="#projectCarousel" data-mdb-slide-to="0" class="active" aria-current="true"
+                                    aria-label="Slide 1"></button>
+                                <button type="button" data-mdb-target="#projectCarousel" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                        
+                            <div class="carousel-inner rounded-5 shadow-4-strong">
+                                <div class="carousel-item active">
+                                    <video autoplay loop muted class="d-block w-100">
+                                        <source src="../../Img/projectAssets/Videos/IK2.webm" type="video/webm" />
+                                    </video>    
+                                    <div class="carousel-caption d-none d-md-block">
+                                    <h5>2D CCD Inverse Kinematics</h5>
+                                    <p>A multi limb armature reaching for two seperate goals with angle limts on certain joints, control by CCD IK.</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="carousel-item">
+<!--                                     <img src="" class="d-block w-100 cIMG"
+                                    alt="Shallow Water Simulation Gif" style="object-position: bottom;"/> -->
+                                    <video autoplay loop muted class="d-block w-100">
+                                        <source src="../../Img/projectAssets/Videos/BOIDSFlockWObst.webm" type="video/webm" />
+                                    </video>    
+                                    <div class="carousel-caption d-none d-md-block">
+                                    <h5>BOIDs with Local Obstacle Avoidance</h5>
+                                    <p>3D agents moving around a obstacle laden map acording to the BOIDs flocking algorithm and an addition obstacle avoidance force.</p>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        
+                            <!-- Controls -->
+                            <button class="carousel-control-prev" type="button" data-mdb-target="#projectCarousel" data-mdb-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-mdb-target="#projectCarousel" data-mdb-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+<!--                         <img src="../../Img/projectAssets/FlowField Grid Arrows.PNG"
+                            class="cIMG" style="aspect-ratio: 16 / 9; max-height: 400px;"/> -->
+                    </div>
+                </div>
+                <div class="col-md-4 py-3">
+                    <div>
+                        <h4>Project Details</h4>
+                        <ul class="ps-3 list-unstyled">
+                            <li>
+                                <strong>Category:</strong>
+                                Game Development, Inverse Kinematics, Group Movment, Local Object Avoidance,Graphics, 3D Simulation, Unity
+                            </li>
+                            <li>
+                                <strong>Date:</strong> Fall 2023
+                            </li>
+                            <li>
+                                <strong>Technologies:</strong>
+                                C#, Unity 3D, Pathfinding, 3D Rendering
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-2">
+                        <h4>How to Run</h4>
+                        <ul class="ps-3 list-unstyled">
+                            <li>
+                                1.) Click on the Download the Project button
+                            </li>
+                            <li>
+                                2.) Download the latest executable from the Github Releases Page
+                            </li>
+                            <li>
+                                3.) Click the executable to play the game
+                            </li>
+                            <li>
+                                4.) Check out the project's source code on Github
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-2 float-end">
+                        <button class="btn btn-outline-dark mt-2">Download Project</button>
+                        <button class="btn btn-dark mt-2" style="background-color: #333333;"><i class="fab fa-github"></i>
+                            Github</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mt-4 additionalFeatures">
+            <div class="contentBody fHeader shadow-5 mb-3">
+                <h1 class="py-2">
+                    Highlighted Features
+                </h1>
+            </div>
+
+            <div class="featureContainer">
+
+                <div class="card g-0">
+                    <div class="row gx-0 d-flex align-items-center">
+                        <div class="col-md-5 d-flex">
+                            <video autoplay loop muted class="cIMG p-2 fcIMG ">
+                                <source src="../../Img/projectAssets/Videos/IK3.webm" type="video/webm" />
+                            </video>    
+                        </div>
+                        <div class="offset-md-1 col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title snippet">Multi Limb IK 2D Armature</h5>
+                                <p class="ps-2 card-text">
+                                    This simulation uses the Cyclic Coordinate Descent method to implement Inverse Kinematics along a multi-limb armature. The armature consists of a series of connected bones that end in two separate limbs with end effectors that are reaching toward two different goal points in the scene.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card g-0">
+                    <div class="row gx-0 d-flex align-items-center">
+                        <div class="col-md-5 d-flex">
+                            <video autoplay loop muted class="cIMG p-2 fcIMG ">
+                                <source src="../../Img/projectAssets/Videos/IK1.webm" type="video/webm" />
+                            </video>    
+                        </div>
+                        <div class="offset-md-1 col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title snippet">Angle Limits and Collision</h5>
+                                <p class="ps-2 card-text">
+                                    In addition to the CCD IK driving the armature, the simulation also includes angle constraints that can be defined for each joint. Collisions between the armature and obstacles were also implemented using a simple line and circle intersection test.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card g-0">
+                    <div class="row gx-0 d-flex align-items-center">
+                        <div class="col-md-5 d-flex">
+                            <video autoplay loop muted class="cIMG p-2 fcIMG ">
+                                <source src="../../Img/projectAssets/Videos/BOIDS1.webm" type="video/webm" />
+                            </video>    
+                        </div>
+                        <div class="offset-md-1 col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title snippet">BOIDS Flocking Simulation</h5>
+                                <p class="ps-2 card-text">
+                                    The second simulation uses the BOIDs flocking algorithm to drive the movement of agents in a 3D environment. BOIDS uses a series of forces between nearby units to simulate intelligent group movement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card g-0">
+                    <div class="row gx-0 d-flex align-items-center">
+                        <div class="col-md-5 d-flex">
+
+                            <video autoplay loop muted class="cIMG p-2 fcIMG ">
+                                <source src="../../Img/projectAssets/Videos/BOIDS2.webm" type="video/webm" />
+                            </video>    
+                        </div>
+                        <div class="offset-md-1 col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title snippet">Collision Avoidance and Goal Force</h5>
+                                <p class="ps-2 card-text">
+                                    In addition to the normal forces included in BOIDs, I also implemented two additional forces. A goal force, directing the agents towards a goal position on the map, and a collision avoidance force. That force pushes agents away from objects in the scene they are moving towards in order to steer the agents around obstructions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer style="margin-top: auto;">
+        <div class="contentBody">
+            <div class="row">
+                <hr class="hr bg-dark mt-4">
+            </div>
+            <div class="row">
+                <div class="col-6 ps-5">
+                    <ul class="list-unstyled">
+                        <li class="py-1">
+                            <a href="../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="py-1">
+                            <a href="../about.html" class="nav-link">About Me</a>
+                        </li>
+                        <li class="py-1">
+                            <a href="../projects.html" class="nav-link">Projects</a>
+                        </li>
+                        <li class="py-1">
+                            <a href="../contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 pe-5 float-end text-end">
+                    <div class="fw-light text-gray">
+                        © Caleb Wiebolt 2023
+                    </div>
+                    <div class="py-2">
+                        <a href="#" class="px-2">
+                            <i class="far fa-envelope fa-2x text-black-50"></i>
+                        </a>
+                        <a href="#" class="px-2">
+                            <i class="fab fa-github fa-2x text-black-50"></i>
+                        </a>
+                        <a href="#" class="px-2">
+                            <i class="fab fa-linkedin-in fa-2x text-black-50"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+
+</html>
