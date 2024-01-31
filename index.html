@@ -20,13 +20,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Snippet&display=swap" rel="stylesheet">
-
-
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script>
+        //Initialize Lozad
+        const observer = lozad();
+        observer.observe();
+    </script>
 </head>
 <body>
 
     <main>
-        <section id="landingSection">
+        <section id="landingSection" class="lozad" data-background-image="../Img/MainCoverImageSmall.jpg" data-placeholder-background="blue">
             
             <div class="contentBody d-flex flex-column" style="height: 100%;">
                 <!-- Navbar -->
@@ -80,7 +85,7 @@
             <div class="contentBody">
                 <div class="row my-4">
                     <div class="col-4">
-                        <video autoplay loop muted class="img-fluid p-3">
+                        <video autoplay loop muted class="img-fluid p-3" poster="./Img/projectAssets/Videos/Thumbnails/_BOIDScloseUp.webm.png">
                             <source src="./Img/projectAssets/Videos/BOIDScloseUp.webm" type="video/webm" />
                         </video>    
                     </div>
