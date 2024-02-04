@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include(buildRoot + '/Partials/header.ejs', {relPth: "../"}); -%>
+
+    <title>Caleb W. - Contact</title>
+    <link href="../Assets/CSS/contact.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column">
+    <header>
+      <div class="contentBody d-flex flex-column"><%- include(buildRoot + '/Partials/nav.ejs', {navID: 3, logo: true,relPth: "../"}); -%></div>
+    </header>
+
+    <main>
+      <section class="mt-4">
+        <div class="contentBody">
+          <div class="row">
+            <div class="col-md-4 d-flex">
+              <div class="my-auto">
+                <h1>Get In Touch</h1>
+                <hr />
+                <p class="ms-4">Want to inquire about my work? Want to talk about an opportunity or project? Fill out the contact form to get in touch.</p>
+              </div>
+            </div>
+
+            <div class="col-md-8 d-flex">
+              <div class="me-auto me-md-0 ms-auto col-md-10 col-lg-10 card contactCard my-4 mx-2">
+                <div class="card-body">
+                  <form class="border border-light p-2">
+                    <h4 class="mb-4 snippet">Contact Me</h4>
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <label for="contactName">Name:</label>
+                        <input class="form-control mb-4" id="contactName" name="contactName" type="text" placeholder="Name" />
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="contactEmail">Email:</label>
+                        <input class="form-control mb-4" id="contactEmail" name="contactEmail" type="email" placeholder="Email" />
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <label for="contactMessage">Your Message:</label>
+                        <textarea id="contactMessage" class="form-control mb-4" placeholder="Message" style="height: 20vh"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-6 ms-auto px-4">
+                        <button class="float-end btn btn-info btn-block contactBtn" type="submit">Send</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include(buildRoot + '/Partials/footer.ejs', {relPth: "../"}); -%>
+  </body>
+</html>

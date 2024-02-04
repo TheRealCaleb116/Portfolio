@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include(buildRoot + '/Partials/header.ejs', {relPth: "./"}); -%>
+    <title>Caleb W. - Home</title>
+
+    <!--Custom Styles-->
+    <link href="./Assets/CSS/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section id="landingSection" class="lozad" data-background-image="./Assets/Img/MainCoverImageSmall.jpg" data-placeholder-background="#9cbacc">
+        <div class="contentBody d-flex flex-column" style="height: 100%">
+          <%- include(buildRoot + '/Partials/nav.ejs', {navID: 0, logo:false, relPth: "./"}); -%>
+
+          <div class="flex-fill d-flex flex-column">
+            <div style="padding-top: 15vh">
+              <img src="./Assets/Img/Title Text.svg" style="width: 45vw; min-width: 500px" />
+            </div>
+            <div class="align-self-end mt-auto" style="padding-bottom: 10vh">
+              <img src="./Assets/Img/Tagline.svg" style="width: 20vw; min-width: 200px" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="contentBody">
+          <div class="row my-4">
+            <div class="col-4">
+              <video autoplay loop muted class="img-fluid p-3 lozad" data-poster="./Assets/Img/projectAssets/Videos/Thumbnails/_BOIDScloseUp.webm.png">
+                <source src="./Assets/Img/projectAssets/Videos/BOIDScloseUp.webm" type="video/webm" />
+              </video>
+            </div>
+            <div class="col-8 mt-3 pt-3">
+              <h1>Hi, I'm <i>Caleb</i></h1>
+              <p>
+                Ever since I was a child I have been captivated by two things, technology, and creativity. That passion birthed when I was young has only grown since then. I'm a
+                <em>Software Developer</em>, <em>Designer</em>, and <em>General Creative</em>
+                eternaly motivated to create and explore interesting projects in all areas of technology. Please take a look around to see a collection of my projects ranging everything from full
+                stack security training applications to video game projects. If you have any questions don't hesitate to reach out. I look forward to hearing from you.
+              </p>
+              <p>
+                <button type="button" class="btn btn-outline-black float-end me-4" data-mdb-ripple-color="dark" onclick="window.location.href='./Pages/contact.html'">Contact Me</button>
+                <button type="button" class="btn btn-outline-black float-end me-4" data-mdb-ripple-color="dark" onclick="window.location.href='./Pages/projects.html'">Explore More</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include(buildRoot + '/Partials/footer.ejs', {relPth: "./"}); -%>
+  </body>
+</html>

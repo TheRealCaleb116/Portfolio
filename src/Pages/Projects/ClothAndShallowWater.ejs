@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include(buildRoot + '/Partials/header.ejs', {relPth: "../../"}); -%>
+    <title>Caleb W. - Cloth and Shallow Water Sim</title>
+    <link href="../../Assets/CSS/projectPage.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column">
+    <header>
+      <div class="contentBody d-flex flex-column"><%- include(buildRoot + '/Partials/nav.ejs', {navID: 0, logo: true,relPth: "../../"}); -%></div>
+    </header>
+    <main>
+      <section class="projectHeaderImg bg-dark text-light">
+        <video autoplay loop muted style="object-position: 0 45%">
+          <source src="../../Assets/Img/projectAssets/Videos/Cloth2.webm" type="video/webm" />
+        </video>
+        <!-- Image Mask -->
+        <div class="mask mask-custom"></div>
+
+        <div class="headerContent row d-flex align-items-center w-100 h-100 px-5">
+          <div class="col-sm-6">
+            <h2>Cloth in Wind and Shallow Water Simulation</h2>
+            <h6 class="ps-3 dim"><em>C#, Mass-Spring Cloth Sim, Shallow Water, Unity 3D, Realtime Simulation</em></h6>
+          </div>
+          <div class="col-sm-6">
+            <p>
+              This project contains two simulations, one is a real-time 3D Cloth Simulation that uses a Mass-Spring model to simulate realistic cloth as it drapes, collides with an object, and is
+              affected by air drag and wind forces. The other simulation is a 2D Shallow Water simulation that is derived from the Navier-Stokes equations. It uses the results of the shallow water
+              equations to drive a procedurally generated mesh that was then textured to look like water. The project was implemented from scratch by me for my Animation and Planning in Games class. A
+              link to the write-up page I submitted for the assignment is linked below.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" style="max-width: unset">
+        <div class="row px-5 d-flex align-items-center">
+          <div class="col-md-8">
+            <div class="bg-image p-3">
+              <!-- Carousel -->
+              <div id="projectCarousel" class="carousel slide carousel-fade cIMG" data-mdb-ride="carousel" data-mdb-carousel-init>
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                  <button type="button" data-mdb-target="#projectCarousel" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-mdb-target="#projectCarousel" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner rounded-5 shadow-4-strong">
+                  <div class="carousel-item active">
+                    <video autoplay loop muted class="d-block w-100">
+                      <source src="../../Assets/Img/projectAssets/Videos/Cloth1.webm" type="video/webm" />
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>3D Mass-Spring Cloth Simulation</h5>
+                      <p>The cloth is simulated with external collision, air resistance, and wind forces.</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="../../Assets/Img/projectAssets/ArtEntryCalebWiebolt.gif" class="d-block w-100 cIMG" alt="Shallow Water Simulation Gif" style="object-position: bottom" />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Shallow Water Simulation</h5>
+                      <p>A 2D Shallow water simulation driving a mesh that is generated in and rendered in real time.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-mdb-target="#projectCarousel" data-mdb-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-mdb-target="#projectCarousel" data-mdb-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div>
+              <h4>Project Details</h4>
+              <ul class="ps-3 list-unstyled">
+                <li>
+                  <strong>Category:</strong>
+                  Physical Simulation, Game Development, Graphics, 3D Simulation, Unity
+                </li>
+                <li><strong>Date:</strong> Fall 2023</li>
+                <li>
+                  <strong>Technologies:</strong>
+                  C#, Unity 3D, Cloth Simulation, Navier-Stokes Equations, 3D Rendering
+                </li>
+              </ul>
+            </div>
+            <div class="pt-2">
+              <h4>How to Run</h4>
+              <ul class="ps-3 list-unstyled">
+                <li>1.) Click on the Download the Project button</li>
+                <li>2.) Download the latest executable from the Github Releases Page</li>
+                <li>3.) Click the executable to play the game</li>
+                <li>4.) Check out the project's source code on Github</li>
+              </ul>
+            </div>
+
+            <div class="pt-2 float-end">
+              <button class="btn btn-outline-dark mt-2">Download Project</button>
+              <button class="btn btn-dark mt-2" style="background-color: #333333"><i class="fab fa-github"></i> Github</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-4 additionalFeatures">
+        <div class="contentBody fHeader shadow-5 mb-3">
+          <h1 class="py-2">Highlighted Features</h1>
+        </div>
+
+        <div class="featureContainer">
+          <div class="card g-0">
+            <div class="row gx-0 d-flex align-items-center">
+              <div class="col-md-5 d-flex">
+                <video autoplay loop muted class="cIMG p-2 fcIMG">
+                  <source src="../../Assets/Img/projectAssets/Videos/Cloth3.webm" type="video/webm" />
+                </video>
+              </div>
+              <div class="offset-md-1 col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title snippet">Mass-Spring Based Cloth</h5>
+                  <p class="ps-2 card-text">
+                    The Cloth simulation is based on a Mass-Spring formulation that models the cloth as a grid of vertices connected by springs that are tuned to give a slightly elastic cloth-like
+                    behavior. My cloth uses spring links in the cardinal directions between vertices. This simulation controls the movement of a procedural mesh that is updated as the simulation
+                    updates.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card g-0">
+            <div class="row gx-0 d-flex align-items-center">
+              <div class="col-md-5 d-flex">
+                <video autoplay loop muted class="cIMG p-2 fcIMG">
+                  <source src="../../Assets/Img/projectAssets/Videos/Cloth4.webm" type="video/webm" />
+                </video>
+              </div>
+              <div class="offset-md-1 col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title snippet">Collision and Air Drag</h5>
+                  <p class="ps-2 card-text">
+                    The cloth also models air drag on the surface of the cloth, changing the velocity of each part of the cloth, and collision with external objects like the ball in the scene
+                    depicted. The collision is implemented with a simple sphere intersection test against each vertex in the cloth mesh.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card g-0">
+            <div class="row gx-0 d-flex align-items-center">
+              <div class="col-md-5 d-flex">
+                <video autoplay loop muted class="cIMG p-2 fcIMG">
+                  <source src="../../Assets/Img/projectAssets/Videos/Cloth5.webm" type="video/webm" />
+                </video>
+              </div>
+              <div class="offset-md-1 col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title snippet">Wind Forces</h5>
+                  <p class="ps-2 card-text">
+                    A convenient consequence of modeling air drag is that it is simple to add an additional force to model wind moving the cloth. Using Unity's particle system I also created particles
+                    to visualize the direction and intensity of the wind.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card g-0">
+            <div class="row gx-0 d-flex align-items-center">
+              <div class="col-md-5 d-flex">
+                <video autoplay loop muted class="cIMG p-2 fcIMG">
+                  <source src="../../Assets/Img/projectAssets/Videos/Water1.webm" type="video/webm" />
+                </video>
+              </div>
+              <div class="offset-md-1 col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title snippet">Shallow Water Simulation</h5>
+                  <p class="ps-2 card-text">
+                    I also created a 2D shallow water simulation and integrated it into a 2D scene. This simulation uses a set of equations derived from the Navier-Stokes equations to simulate the
+                    heights that define the the surface of a body of shallow water. I used these results to generate a procedural mesh that I then textured to look like water.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include(buildRoot + '/Partials/footer.ejs', {relPth: "../../"}); -%>
+  </body>
+</html>

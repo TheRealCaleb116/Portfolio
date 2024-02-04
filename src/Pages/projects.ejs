@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include(buildRoot + '/Partials/header.ejs', {relPth: "../"}); -%>
+    <title>Caleb W. - Projects</title>
+    <link href="../Assets/CSS/projects.css" rel="stylesheet" />
+  </head>
+
+  <body class="d-flex flex-column">
+    <header>
+      <div class="contentBody d-flex flex-column"><%- include(buildRoot + '/Partials/nav.ejs', {navID: 2, logo: true,relPth: "../"}); -%></div>
+    </header>
+
+    <main>
+      <!-- Project Highlights -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video autoplay loop muted class="w-100">
+              <source src="../Assets/Img/projectAssets/Videos/FF1.webm" type="video/webm" />
+            </video>
+            <!-- Image Mask -->
+            <div class="mask" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2835200974921218) 79%, rgba(0, 0, 0, 0.7961251395089286) 100%)"></div>
+            <div class="carousel-caption d-flex align-items-center justify-content-end">
+              <div class="col-md-12 col-lg-7 col-xl-4">
+                <h2 class="snippet">Group Pathfinding With FlowFields</h2>
+                <div class="ps-3">
+                  <h6>
+                    <em>C#, FlowFields, Pathfinding, Unity 3D, Graphs, Realtime Simulation</em>
+                  </h6>
+                  <p>
+                    A 3D simulation of large group pathfinding using a Flow Fields algorithm calculated by solving the Eikonal Equation. My final project for my Animation and Planning in Games class,
+                    that was implemented based on the paper Continuum Crowds by Adrien Treuille, Seth Cooper, and Zoran Popovic.
+                  </p>
+                  <a href="./Projects/FlowFieldPathfinding.html">
+                    <button class="btn btn-sm btn-secondary float-end">View Project</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <video autoplay loop muted class="w-100">
+              <source src="../Assets/Img/projectAssets/Videos/Cloth2.webm" type="video/webm" />
+            </video>
+
+            <!-- Image Mask -->
+            <div class="mask" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2835200974921218) 79%, rgba(0, 0, 0, 0.7961251395089286) 100%)"></div>
+            <div class="carousel-caption d-flex align-items-center justify-content-end">
+              <div class="col-md-12 col-lg-7 col-xl-4">
+                <h2 class="snippet">Cloth in Wind and Shallow Water Simulation</h2>
+                <div class="ps-3">
+                  <h6>
+                    <em>C#, Mass-Spring Cloth Sim, Shallow Water, Unity 3D, Realtime Simulation</em>
+                  </h6>
+                  <p>
+                    A real-time 3D Cloth Simulation using a Mass-Spring method and a 2D Shallow Water simulation. Both written in C# and implemented in Unity. Written as a project for my Animation and
+                    Planning in Games Class.
+                  </p>
+                  <a href="./Projects/ClothAndShallowWater.html">
+                    <button class="btn btn-sm btn-secondary float-end">View Project</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <hr />
+
+      <section class="mt-4">
+        <div class="contentBody">
+          <!-- Project Grid -->
+          <div class="row mt-3">
+            <div class="col-md-3">
+              <h1 class="py-4 px-2 text-center mt-5">My Recent Projects</h1>
+            </div>
+            <div class="col-md-9">
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- Group Pathfinding With Flow Fields -->
+                <div class="col">
+                  <div class="card mb-3 projectCard shadow-3-strong">
+                    <img src="../Assets/Img/projectAssets/FlowField.PNG" alt="" class="img-fluid rounded-5 cIMG h-100 cBackgroundImage" />
+                    <div class="mask rounded-5" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2835200974921218) 79%, rgba(0, 0, 0, 0.7961251395089286) 100%)"></div>
+                    <div class="row g-0 my-auto">
+                      <div class="card-body">
+                        <h5 class="card-title snippet">Group Pathfinding With FlowFields</h5>
+
+                        <div class="ps-2 pt-1">
+                          <h6><em>C#, FlowFields, Pathfinding, Unity 3D, Graphs, Realtime Simulation</em></h6>
+                          <p class="card-text">
+                            A 3D simulation of large group pathfinding using a Flow Fields algorithm calculated by solving the Eikonal Equation. My final project for my Animation and Planning in Games
+                            class, that was implemented based on the paper Continuum Crowds by Adrien Treuille, Seth Cooper, and Zoran Popovic.
+                          </p>
+                          <a href="./Projects/FlowFieldPathfinding.html">
+                            <button class="btn btn-sm btn-secondary float-end">View Project</button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Cloth Simulation and Shallow Water  -->
+                <div class="col">
+                  <div class="card mb-3 projectCard shadow-3-strong">
+                    <img src="../Assets/Img/projectAssets/ClothSimPic.png" alt="" class="img-fluid rounded-5 cIMG h-100 cBackgroundImage" />
+                    <div class="mask rounded-5" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2835200974921218) 79%, rgba(0, 0, 0, 0.7961251395089286) 100%)"></div>
+                    <div class="row g-0 my-auto">
+                      <div class="card-body">
+                        <h5 class="card-title snippet">Cloth in Wind and Shallow Water Simulation</h5>
+
+                        <div class="ps-2 pt-1">
+                          <h6><em>C#, Mass-Spring Cloth Sim, Shallow Water, Unity 3D, Realtime Simulation</em></h6>
+                          <p class="card-text">
+                            A real-time 3D Cloth Simulation using a Mass-Spring method and a 2D Shallow Water simulation. Both written in C# and implemented in Unity. Writen as a project for my
+                            Animation and Planning in Games Class.
+                          </p>
+                          <a href="./Projects/ClothAndShallowWater.html">
+                            <button class="btn btn-sm btn-secondary float-end">View Project</button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 2D CCDIK and BOIDS -->
+                <div class="col">
+                  <div class="card mb-3 projectCard shadow-3-strong">
+                    <img src="../Assets/Img/projectAssets/BOIDS.png" alt="" class="img-fluid rounded-5 cIMG h-100 cBackgroundImage" />
+                    <div class="mask rounded-5" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2835200974921218) 79%, rgba(0, 0, 0, 0.7961251395089286) 100%)"></div>
+                    <div class="row g-0 my-auto">
+                      <div class="card-body">
+                        <h5 class="card-title snippet">2D Inverse Kinematics and BOIDS with Obstacle Avoidance</h5>
+
+                        <div class="ps-2 pt-1">
+                          <h6><em>C#, Inverse Kinimatics, BOIDS, Unity 3D, Realtime Simulation</em></h6>
+                          <p class="card-text">
+                            A 2D Inverse Kinematics simulation implemented using Cyclic Coordinate Descent(CCD) and a BOIDS implementation with an additional obstacle avoidance force to cause flocks
+                            to move around obstacles.
+                          </p>
+                          <a href="./Projects/2DCDDIKAndBOIDS.html">
+                            <button class="btn btn-sm btn-secondary float-end">View Project</button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Fishy Phisher -->
+                <!--                             <div class="col ">
+                                <div class="card mb-3 projectCard shadow-3-strong">
+                                    <img src="../Assets/Img/projectAssets/ArtEntryCalebWiebolt.gif" alt="" class="img-fluid rounded-5 cIMG h-100 cBackgroundImage" />
+                                    <div class="mask rounded-5" style="
+                                   background: linear-gradient(
+                                       0deg,
+                                       rgba(0, 0, 0, 0) 51%,
+                                       rgba(0, 0, 0, 0.2835200974921218) 79%,
+                                       rgba(0, 0, 0, 0.7961251395089286) 100%
+                                   );
+                                   "></div> 
+                                    <div class="row g-0 my-auto">
+                                        <div class="card-body">
+                                            <h5 class="card-title snippet">
+                                                FishyPhisher
+                                            </h5>
+
+                                            <div class="ps-2 pt-1">
+                                                <h6><em>PHP, MySQL, HTML, CSS, Javascript, MDBootstrap</em></h6>
+                                                <p class="card-text">
+                                                    FishyPhisher is a software that automates phishing campaigns for use in security education training and awareness programs. 
+                                                    FishyPhiser can be used to plan, execute, and track phishing email campaigns, providing reports about company security.
+                                                </p>
+                                                <a href="./Projects/FishyPhisherStandalone.html">
+                                                    <button class="btn btn-sm btn-secondary float-end">
+                                                        View Project
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                <!-- The Dungeons Below -->
+                <!--                             <div class="col ">
+                                <div class="card mb-3 projectCard shadow-3-strong">
+                                    <img src="https://twistedsifter.com/wp-content/uploads/2013/05/animated-gifs-of-fighting-game-backgrounds-25.gif" alt="" class="img-fluid rounded-5 cIMG h-100 cBackgroundImage" />
+                                    <div class="mask rounded-5" style="
+                                   background: linear-gradient(
+                                       0deg,
+                                       rgba(0, 0, 0, 0) 51%,
+                                       rgba(0, 0, 0, 0.2835200974921218) 79%,
+                                       rgba(0, 0, 0, 0.7961251395089286) 100%
+                                   );
+                                   "></div> 
+                                    <div class="row g-0 my-auto">
+                                        <div class="card-body">
+                                            <h5 class="card-title snippet">
+                                                The Dungeons Below
+                                            </h5>
+
+                                            <div class="ps-2 pt-1">
+                                                <h6><em>Python Game, Cocos2Dpy, Procedural Map Generation</em></h6>
+                                                <p class="card-text">
+                                                    A 2D dungeon crawling hack and slash with where you fight your way through procedurally generated dungeons of greater and greater difficulty. 
+                                                    Written in Python using the Cocos2Dpy library.
+                                                </p>
+                                                <a href="./Projects/TheDunegonsBelowGame.html">
+                                                    <button class="btn btn-sm btn-secondary float-end">
+                                                        View Project
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                <!-- Apples To Oranges -->
+                <!--                             <div class="col ">
+                                <div class="card mb-3 projectCard shadow-3-strong">
+                                    <img src="../Img/projectAssets/IKsimulation.png" alt="" class="img-fluid rounded-5 cIMG h-100 cBackgroundImage" />
+                                    <div class="mask rounded-5" style="
+                                   background: linear-gradient(
+                                       0deg,
+                                       rgba(0, 0, 0, 0) 51%,
+                                       rgba(0, 0, 0, 0.2835200974921218) 79%,
+                                       rgba(0, 0, 0, 0.7961251395089286) 100%
+                                   );
+                                   "></div> 
+                                    <div class="row g-0 my-auto">
+                                        <div class="card-body">
+                                            <h5 class="card-title snippet">
+                                                Apples To Oranges
+                                            </h5>
+
+                                            <div class="ps-2 pt-1">
+                                                <h6><em>Node JS, Express, MYSQL, SocketIO, Javascript, Less, EJS, IO Game</em></h6>
+                                                <p class="card-text">
+                                                    An Apples to Apples like IO party game. Similar to Jackbox Party games, designed to be played with a 
+                                                    group of people who see the current state of play on a large display while also joining the game and making their selections with their phones.
+                                                    Written with Node JS, Express, SocketIO, and more.
+                                                </p>
+                                                <a href="./Projects/ApplesToOranges.html">
+                                                    <button class="btn btn-sm btn-secondary float-end">
+                                                        View Project
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include(buildRoot + '/Partials/footer.ejs', {relPth: "../"}); -%>
+  </body>
+</html>

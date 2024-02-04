@@ -1,0 +1,71 @@
+.contentBody {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.navbar {
+    box-shadow: none;
+}
+
+#navbarItems {
+    padding-top: 30px;
+
+}
+
+.nav-link {
+    font-family: 'Snippet', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #deccb6;
+}
+
+em {
+    font-style: italic;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Snippet', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+header {
+    background-image: url(../Img/MainCoverImageSmall.jpg);
+    background-position: center;
+    background-position-y: top;
+    background-size: cover;
+}
+
+body,
+main {
+    min-height: 100vh;
+}
+
+.snippet {
+    font-family: 'Snippet', sans-serif;
+    font-weight: bold;
+}
+
+.cIMG {
+    object-fit: cover;
+    width: 100%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

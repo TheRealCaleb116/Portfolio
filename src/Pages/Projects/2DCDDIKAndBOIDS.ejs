@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include(buildRoot + '/Partials/header.ejs', {relPth: "../../"}); -%>
+    <title>Caleb W. - 2D CCDIK And BOIDs</title>
+    <link href="../../Assets/CSS/projectPage.css" rel="stylesheet" />
+  </head>
+  
+  <body class="d-flex flex-column">
+    <header>
+      <div class="contentBody d-flex flex-column"><%- include(buildRoot + '/Partials/nav.ejs', {navID: 0, logo: true,relPth: "../../"}); -%></div>
+    </header>
+
+    <main>
+      <section class="projectHeaderImg bg-dark text-light">
+        <video autoplay loop muted class="">
+          <source src="../../Assets/Img/projectAssets/Videos/BOIDScloseUp.webm" type="video/webm" />
+        </video>
+        <!-- Image Mask -->
+        <div class="mask mask-custom"></div>
+
+        <div class="headerContent row d-flex align-items-center w-100 h-100 px-5">
+          <div class="col-sm-6">
+            <h2>2D Inverse Kinimatics and BOIDS with Obstacle Avoidance</h2>
+            <h6 class="ps-3 dim"><em>C#, Inverse Kinimatics, BOIDS, Unity 3D, Realtime Simulation</em></h6>
+          </div>
+          <div class="col-sm-6">
+            <p>
+              This project contains two simulations, the first is a 2D Inverse Kinematics simulation that was implemented using a Cyclic Coordinate Descent(CCD) method on a multi-arm armature reaching
+              for two different target points. In addition to the base IK system, I implemented configurable angle limits for the armature's joints and collision with external objects. The second
+              simulation uses the BOIDs flocking algorithm with an additional goal and collision avoidance force to direct the movement of groups of AI agents.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" style="max-width: unset">
+        <div class="row px-5 d-flex align-items-center">
+          <div class="col-md-8">
+            <div class="bg-image p-3">
+              <!-- Carousel -->
+              <div id="projectCarousel" class="carousel slide carousel-fade cIMG" data-mdb-ride="carousel" data-mdb-carousel-init>
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                  <button type="button" data-mdb-target="#projectCarousel" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-mdb-target="#projectCarousel" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner rounded-5 shadow-4-strong">
+                  <div class="carousel-item active">
+                    <video autoplay loop muted class="d-block w-100">
+                      <source src="../../Assets/Img/projectAssets/Videos/IK2.webm" type="video/webm" />
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>2D CCD Inverse Kinematics</h5>
+                      <p>A multi-limb armature reaching for two separate goals with angle limits on certain joints, controlled by CCD IK.</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <video autoplay loop muted class="d-block w-100">
+                      <source src="../../Assets/Img/projectAssets/Videos/BOIDSFlockWObst.webm" type="video/webm" />
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>BOIDs with Local Obstacle Avoidance</h5>
+                      <p>3D agents moving around an obstacle-laden map according to the BOIDs flocking algorithm and an additional obstacle avoidance force.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-mdb-target="#projectCarousel" data-mdb-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-mdb-target="#projectCarousel" data-mdb-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div>
+              <h4>Project Details</h4>
+              <ul class="ps-3 list-unstyled">
+                <li>
+                  <strong>Category:</strong>
+                  Game Development, Inverse Kinematics, Group movement, Local Object Avoidance, Graphics, 3D Simulation, Unity
+                </li>
+                <li><strong>Date:</strong> Fall 2023</li>
+                <li>
+                  <strong>Technologies:</strong>
+                  C#, Unity 3D, Pathfinding, 3D Rendering
+                </li>
+              </ul>
+            </div>
+            <div class="pt-2">
+              <h4>How to Run</h4>
+              <ul class="ps-3 list-unstyled">
+                <li>1.) Click on the Download the Project button</li>
+                <li>2.) Download the latest executable from the Github Releases Page</li>
+                <li>3.) Click the executable to play the game</li>
+                <li>4.) Check out the project's source code on Github</li>
+              </ul>
+            </div>
+
+            <div class="pt-2 float-end">
+              <button class="btn btn-outline-dark mt-2">Download Project</button>
+              <button class="btn btn-dark mt-2" style="background-color: #333333"><i class="fab fa-github"></i> Github</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-4 additionalFeatures">
+        <div class="contentBody fHeader shadow-5 mb-3">
+          <h1 class="py-2">Highlighted Features</h1>
+        </div>
+
+        <div class="featureContainer">
+          <div class="card g-0">
+            <div class="row gx-0 d-flex align-items-center">
+              <div class="col-md-5 d-flex">
+                <video autoplay loop muted class="cIMG p-2 fcIMG">
+                  <source src="../../Assets/Img/projectAssets/Videos/IK3.webm" type="video/webm" />
+                </video>
+              </div>
+              <div class="offset-md-1 col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title snippet">Multi Limb IK 2D Armature</h5>
+                  <p class="ps-2 card-text">
+                    This simulation uses the Cyclic Coordinate Descent method to implement Inverse Kinematics along a multi-limb armature. The armature consists of a series of connected bones that end
+                    in two separate limbs with end effectors that are reaching towards two different goal points in the scene.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card g-0">
+            <div class="row gx-0 d-flex align-items-center">
+              <div class="col-md-5 d-flex">
+                <video autoplay loop muted class="cIMG p-2 fcIMG">
+                  <source src="../../Assets/Img/projectAssets/Videos/IK1.webm" type="video/webm" />
+                </video>
+              </div>
+              <div class="offset-md-1 col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title snippet">Angle Limits and Collision</h5>
+                  <p class="ps-2 card-text">
+                    In addition to the CCD IK driving the armature, the simulation also includes angle constraints that can be defined for each joint. Collisions between the armature and obstacles
+                    were also implemented using a simple line and circle intersection test.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card g-0">
+            <div class="row gx-0 d-flex align-items-center">
+              <div class="col-md-5 d-flex">
+                <video autoplay loop muted class="cIMG p-2 fcIMG">
+                  <source src="../../Assets/Img/projectAssets/Videos/BOIDS1.webm" type="video/webm" />
+                </video>
+              </div>
+              <div class="offset-md-1 col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title snippet">BOIDS Flocking Simulation</h5>
+                  <p class="ps-2 card-text">
+                    The second simulation uses the BOIDs flocking algorithm to drive the movement of agents in a 3D environment. BOIDS uses a series of forces between nearby units to simulate
+                    intelligent group movement.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card g-0">
+            <div class="row gx-0 d-flex align-items-center">
+              <div class="col-md-5 d-flex">
+                <video autoplay loop muted class="cIMG p-2 fcIMG">
+                  <source src="../../Assets/Img/projectAssets/Videos/BOIDS2.webm" type="video/webm" />
+                </video>
+              </div>
+              <div class="offset-md-1 col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title snippet">Collision Avoidance and Goal Force</h5>
+                  <p class="ps-2 card-text">
+                    In addition to the normal forces included in BOIDs, I also implemented two additional forces. A goal force, directing the agents towards a goal position on the map, and a collision
+                    avoidance force. That force pushes agents away from objects in the scene they are moving towards in order to steer the agents around obstructions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include(buildRoot + '/Partials/footer.ejs', {relPth: "../../"}); -%>
+  </body>
+</html>

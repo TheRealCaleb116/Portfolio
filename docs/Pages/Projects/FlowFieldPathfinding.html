@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<link href="../../Assets/CSS/clearCSS.css" rel="stylesheet" />
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Snippet&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<!-- MDB -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+<link href="../../Assets/CSS/global.css" rel="stylesheet" />
+
+<!-- Lazy Loading Library and Init -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+    <title>Caleb W. - Flow Field Pathfinding</title>
+    <link href="../../Assets/CSS/projectPage.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column">
+    <header>
+        <div class="contentBody d-flex flex-column"><!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <!-- Container wrapper -->
+  <div class="container-fluid" id="navContainer">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler ms-auto"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <a class="navbar-brand mt-2 mt-lg-0" href="../../index.html" id="navbarLogo">
+        <img src="../../Assets/Img/Title Text.svg" style="height: 64px" />
+      </a>
+      
+
+      <!--Right align stuff-->
+      <div class="ms-auto" id="navbarItems">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " href="../../Pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../Pages/projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../Pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+      </header>
+
+    <main>
+        <section class="projectHeaderImg bg-dark text-light">
+            <video autoplay loop muted class="lozad" data-poster="../../Assets/Img/projectAssets/Videos/Thumbnails/_FF1.webm.png">
+                <source src="../../Assets/Img/projectAssets/Videos/FF1.webm" type="video/webm" />
+            </video>    
+            <!-- Image Mask -->
+            <div class="mask mask-custom"></div>
+
+            <div class="headerContent row d-flex align-items-center w-100 h-100 px-5">
+                <div class="col-sm-6">
+                    <h2>Group Pathfinding With Flow Fields</h2>
+                    <h6 class="ps-3 dim"><em>C#, Unity 3D, Pathfinding, Flow Field, Eikonal Equations, 3D Simulation</em></h6>
+                </div>
+                <div class="col-sm-6">
+                    <p>
+                        Group Pathfinding With Flow Fields is a project I wrote as the final project for my Animation and Planning In Games class. 
+                        My goal was to implement a Flow Field based pathfinding solution for large numbers of individual agents in the game engine 
+                        Unity, similar to systems found in RTS games. The Flow Field is built on a grid representation and the integration field is 
+                        calculated with the Eikonal equation, providing a smoother vector field when compared to methods based on a form of Dijkstra’s 
+                        algorithm. The result is a relatively efficient pathfinding solution that's computation time scales with the map size not the 
+                        number of pathing agents.                    
+                    </p>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="container" style="max-width: unset;">
+            <div class="row px-5 d-flex align-items-center">
+                <div class="col-md-8">
+                    <div class="bg-image p-3">
+                        <img data-src="../../Assets/Img/projectAssets/FlowFieldGridArrowsSmall.jpg"
+                            class="cIMG lozad" style="aspect-ratio: 16 / 9; max-height: 400px;"/>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3">
+                    <div>
+                        <h4>Project Details</h4>
+                        <ul class="ps-3 list-unstyled">
+                            <li>
+                                <strong>Category:</strong>
+                                Game Development, Game Design, Graphics, 3D Simulation, Unity
+                            </li>
+                            <li>
+                                <strong>Date:</strong> Fall 2023
+                            </li>
+                            <li>
+                                <strong>Technologies:</strong>
+                                C#, Unity 3D, Pathfinding, 3D Rendering
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-2">
+                        <h4>How to Run</h4>
+                        <ul class="ps-3 list-unstyled">
+                            <li>
+                                1.) Click on the Download the Project button
+                            </li>
+                            <li>
+                                2.) Download the latest executable from the Github Releases Page
+                            </li>
+                            <li>
+                                3.) Click the executable to play the game
+                            </li>
+                            <li>
+                                4.) Check out the project's source code on Github
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-2 float-end">
+                        <button class="btn btn-outline-dark mt-2">Download Project</button>
+                        <button class="btn btn-dark mt-2" style="background-color: #333333;"><i class="fab fa-github"></i>
+                            Github</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mt-4 additionalFeatures">
+            <div class="contentBody fHeader shadow-5 mb-3">
+                <h1 class="py-2">
+                    Highlighted Features
+                </h1>
+            </div>
+
+            <div class="featureContainer">
+
+                <div class="card g-0">
+                    <div class="row gx-0 d-flex align-items-center">
+                        <div class="col-md-5 d-flex">
+                            <video autoplay loop muted class="cIMG p-2 fcIMG ">
+                                <source src="../../Assets/Img/projectAssets/Videos/FF3.webm" type="video/webm" />
+                            </video>    
+                        </div>
+                        <div class="offset-md-1 col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title snippet">Many Unit Single Goal Pathfinding</h5>
+                                <p class="ps-2 card-text">
+                                    Because the flow field is a map calculated once for each destination, the computation time scales 
+                                    with the size of the map and not with the number of agents requesting a path. This makes the algorithm 
+                                    well suited for many agents pathing from different locations to the same point.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card g-0">
+                    <div class="row gx-0 d-flex align-items-center">
+                        <div class="col-md-5 d-flex">
+                            <video autoplay loop muted class="cIMG p-2 fcIMG ">
+                                <source src="../../Assets/Img/projectAssets/Videos/FF2.webm" type="video/webm" />
+                            </video>    
+                        </div>
+                        <div class="offset-md-1 col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title snippet">Flowing Movement</h5>
+                                <p class="ps-2 card-text">
+                                    Because the Flow Field pathfinding has a unit reference the field and follow the gradient of that field, 
+                                    paths often look more organic and large numbers of agents start to move more akin to fluid around obstacles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card g-0">
+                    <div class="row gx-0 d-flex align-items-center">
+                        <div class="col-md-5 d-flex">
+                            <video autoplay loop muted class="cIMG p-2 fcIMG ">
+                                <source src="../../Assets/Img/projectAssets/Videos/FF4.webm" type="video/webm" />
+                            </video>    
+                        </div>
+                        <div class="offset-md-1 col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title snippet">Layers of Maps</h5>
+                                <p class="ps-2 card-text">
+                                    The final vector field that agents reference when they want to move is calculated from a series of fields. 
+                                    We start with an obstruction layer and then create an integration layer by integrating values out from the goal position. 
+                                    Taking the gradient of that integration field at each cell in the grid provides the vector field.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card g-0">
+                    <div class="row gx-0 d-flex align-items-center">
+                        <div class="col-md-5 d-flex">
+
+                            <video autoplay loop muted class="cIMG p-2 fcIMG ">
+                                <source src="../../Assets/Img/projectAssets/Videos/FF5.webm" type="video/webm" />
+                            </video>    
+                        </div>
+                        <div class="offset-md-1 col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title snippet">Eikonal vs Dijkstra’s</h5>
+                                <p class="ps-2 card-text">
+                                    The integration field can be calculated in many different ways. One of the computationally fastest ways to do 
+                                    this is with a version of Dijkstra’s algorithm to step through each node going out from the goal position. The 
+                                    issue with this method is that it is discrete, causing noticeable square or diamond shape artifacting. This caused 
+                                    agents to take odd paths favoring the cardinal axis. After attempting this method I switched to calculating the 
+                                    integration field using the Eikonal equation, which is a partial differential equation used to model wave propagation 
+                                    amongst other things. While more computationally expensive, the field provided is much smoother and more realistic, 
+                                    similar to if a wave in water originates from the goal position and radiates outwards. There are several ways to 
+                                    perform these calculations, for instance, the Fast Marching Method. For my implementation, I used the Fast Iterative Method.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+    <div class="contentBody">
+        <div class="row">
+            <hr class="hr bg-dark mt-4">
+        </div>
+        <div class="row">
+            <div class="col-6 ps-5">
+                <ul class="list-unstyled">
+                    <li class="py-1">
+                        <a href="../../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="../../Pages/about.html" class="nav-link">About Me</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="../../Pages/projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="py-1">
+                        <a href="../../Pages/contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 pe-5 float-end text-end">
+                <div class="fw-light text-gray">
+                    © Caleb W. 2024
+                </div>
+                <div class="py-2">
+                    <a href="../../Pages/contact.html" class="px-2">
+                        <i class="far fa-envelope fa-2x text-black-50"></i>
+                    </a>
+                    <a href="https://github.com/TheRealCaleb116" class="px-2">
+                        <i class="fab fa-github fa-2x text-black-50"></i>
+                    </a>
+<!--                     <a href="#" class="px-2">
+                        <i class="fab fa-linkedin-in fa-2x text-black-50"></i>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+    //Initialize Lozad
+    lozad(".lozad").observe();
+</script>
+
+</body>
+
+</html>

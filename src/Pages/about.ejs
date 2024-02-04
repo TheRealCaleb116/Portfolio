@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include(buildRoot + '/Partials/header.ejs', {relPth: "../"}); -%>
+    <title>Caleb W. - About</title>
+    <link href="../Assets/CSS/about.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column">
+    <header>
+      <div class="contentBody d-flex flex-column"><%- include(buildRoot + '/Partials/nav.ejs', {navID: 1, logo: true,relPth: "../"}); -%></div>
+    </header>
+    <main class="mt-4">
+      <section class="mt-5">
+        <div class="contentBody">
+          <div class="col-sm-12 text-center mx-auto">
+            <h1>Hello, I'm <i>Caleb W.</i></h1>
+            <hr />
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-4 col-xl-6 my-auto">
+              <img src="../Assets/Img/AboutImageSmall.jpg" class="cIMG py-2 w-100" />
+            </div>
+            <div class="col-lg-8 col-xl-6 my-auto">
+              <p>
+                Hello, and welcome to my portfolio. My name is Caleb and I'm a <em>Software Developer</em>, <em>Designer</em>, and <em>General Creative</em> with a B.S. in Computer Science and an
+                A.A.S in Computer Programming, recently graduated from the University of Minnesota Twin Cities.
+              </p>
+              <p>
+                Ever since I was a child I have been captivated by two things, technology, and creativity. That passion has only grown since and has driven me to explore many interests and fields
+                surrounding and involving both those passions including, full-stack development, video game development and design, real-time simulation creation, video editing and production, live
+                sound engineering, live stream broadcast production, and creative writing.
+              </p>
+              <p>
+                In my portfolio, you will find a collection of my previous work and side projects. These projects range everything from full-stack security training applications to video games,
+                pathfinding, and cloth simulation projects. I am always excited by new ideas and opportunities. If you want to contact me please click the button below. I look forward to speaking with
+                you!
+              </p>
+            </div>
+          </div>
+
+          <div class="pb-4 d-flex justify-content-end">
+            <button type="button" class="btn btn-outline-black me-4" data-mdb-ripple-color="dark" onclick="window.location.href='./contact.html'">Contact Me</button>
+            <button type="button" class="btn btn-outline-black me-4" data-mdb-ripple-color="dark" onclick="window.location.href='./projects.html'">Explore Projects</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include(buildRoot + '/Partials/footer.ejs', {relPth: "../"}); -%>
+  </body>
+</html>
